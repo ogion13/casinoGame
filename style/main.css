@@ -1,0 +1,29 @@
+body{
+  background-color: #162A4E;
+	padding: 0;
+	margin: 0;
+
+}
+#gameWrapper {
+  float: left;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left:     50%;
+  top:      50%;
+  
+}
+canvas[resize] {
+  display: block;
+  
+  width: 100%;
+  height: 100%;
+}
+.hidden{
+  visibility: hidden;
+}
+.allImages{
+  position: absolute;
+  visibility: hidden;
+}
+

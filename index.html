@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+	<div class="allImages">
+		<img id="image1" class="hidden" src="images/pastry_cookie01_320.png" height="360" width="320">
+		<img id="image2" class="hidden" src='images/pastry_croissant_320.png' height="360" width="320">
+		<img id="image3" class="hidden" src='images/pastry_cupcake_320.png' height="360" width="320">	
+		<img id="image4" class="hidden" src='images/pastry_donut_320.png' height="360" width="320">	
+		<img id="star" class="hidden" src='images/blinkingStar.png' height="128" width="128">
+
+	</div>
+	
+	<div id='gameWrapper'>
+
+	  <canvas id='gameCanvas' resize></canvas>
+	 
+	</div>
+	<script src="js/paper-full.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/resizeCanvas.js"></script>
+	<script src="js/buzz.min.js"></script>
+	<script type="text/paperscript" canvas="gameCanvas" src="js/main.js"></script>
+
+	
+
+</body>
+</html>
