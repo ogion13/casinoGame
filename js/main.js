@@ -66,7 +66,6 @@
 		 	function resizeAllElements () {
 				var scale = getScale();
 		 		scaleFactor = getScaleFactor();
-		 		console.log(scale);
 		 		for (var i = 0; i < allStrokeImages.length; i++) {
 		 			allStrokeImages[i].position*= scale;
 		 			allStrokeImages[i].scale(scale);
@@ -277,7 +276,6 @@
 		 					bet_symbol:symbols[this.value]
 
 		 				};
-		 				console.log(data);
 		 				getServerData(data);
 		 				paper.view.attach('frame', animateStroke);
 		 				removeClickEvents();	
@@ -362,7 +360,6 @@
 		 	}
 		 	function showWinNumber (time) {
 		 		if(!winNumber.animating&&(time - winAnimationStarted)>=0.5&&(time - winAnimationStarted)<=0.6){
-		 			console.log(15415151);
 		 			winNumber.opacity = 1;
 		 			winNumber.animating = true;
 		 			winNumber.startTime = time;
@@ -400,7 +397,6 @@
 		 		}
 		 		showWinNumber(event.time);
 		 		if(event.time - winAnimationStarted>=1){
-		 			console.log(1);
 		 			paper.view.detach('frame',tremble);
 		 			for (var i = 0; i < stars.length; i++) {
 		 				stars[i].opacity = 0;
@@ -502,13 +498,10 @@
 		 		});
 		 	}
 		 	function serverCallBack (data) {
-		 		console.log(data.result_win)
 		 		serverData.returned = true;
 		 		serverData.resultVal = symbols.indexOf(data.result_symbol);
 		 		serverData.winAmount = data.result_win;
 		 		serverData.winType = data.win_type;
-		 		console.log(data);
-		 		console.log(serverData);
 		 	}
 
 		 	
